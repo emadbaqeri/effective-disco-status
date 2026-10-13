@@ -1,31 +1,36 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: emadbaqeri
+repo: effective-disco-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Web app
+    url: https://disco.emaaad.com
+  - name: API
+    url: https://disco-api.emaaad.com/health
+  - name: API reference
+    url: https://disco.emaaad.com/api/v1/openapi.json
+  - name: GitHub webhooks endpoint
+    url: https://disco-api.emaaad.com/webhooks/github
+    method: GET
+    expectedStatusCodes:
+      - 200
+      - 400
+      - 401
+      - 403
+      - 404
+      - 405
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.emaaad.com
+  name: Effective Disco Status
+  introTitle: "**Effective Disco** service status"
+  introMessage: Live status of the Effective Disco staging services, checked every 5 minutes. Incidents are tracked as [GitHub issues](https://github.com/emadbaqeri/effective-disco-status/issues).
   navbar:
     - title: Status
       href: /
+    - title: App
+      href: https://disco.emaaad.com
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/emadbaqeri/effective-disco
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+assignees:
+  - emadbaqeri

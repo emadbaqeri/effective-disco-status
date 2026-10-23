@@ -1,7 +1,7 @@
 url: https://disco.emaaad.com/api/v1/openapi.json
-status: up
-code: 200
-responseTime: 1296
-lastUpdated: 2026-10-23T01:10:49.084Z
+status: down
+code: 522
+responseTime: 19714
+lastUpdated: 2026-10-23T10:15:55.584Z
 startTime: 2026-10-13T15:04:51.710Z
 generator: Upptime <https://github.com/upptime/upptime>
